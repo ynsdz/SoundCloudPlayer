@@ -23,23 +23,30 @@ SC.get('/tracks', {
 SoundCloudAPI.getTrack("Rilo Kiley");
 
 SoundCloudAPI.renderTracks= function(tracks){
-    tracks.forEach(function(track){
-        var card =document.createElement("div");
+
+ //card 
+var card =document.createElement("div");
 card.classList.add("card");
+
+//image
 var imageDiv =document.createElement("div");
 imageDiv.classList.add("image");
 
 var image_img = document.createElement("img");
 image_img.classList.add("image_img");
 image_img.src = "http://www.placekitten.com/290/290";
+
 imageDiv.appendChild(image_img);
-    
+
+//content 
 var content= document.createElement('div');
     content.classList.add("content");
+
 var header = document.createElement('div');
-    header.classList.add('header');
+header.classList.add('header');
 header.innerHTML= "<a href='#' target='_blank'>Science Vs. Romance</a>"
     
+//button
 var button = document.createElement('div');
     button.classList.add("ui", 'bottom', 'attached', 'button', 'js-button');
 var icon = document.createElement('i');
@@ -58,7 +65,7 @@ card.appendChild(button);
 var searchResult = document.querySelector(" .js-search-results" );
 
 searchResult.appendChild(card);
-}
+
                    };
 
 
