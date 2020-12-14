@@ -4,6 +4,8 @@ var UI={}
 UI.submit=function(){
     var search = document.querySelector('.js-submit');
     search.addEventListener('click',function(){
+      var container = document.querySelector(".js-search-results");
+      container.innerHTML = " ";
     var input = document.querySelector("input").value;
         SoundCloudAPI.getTrack(input);
 
@@ -14,6 +16,8 @@ UI.enter= function(){
 inputId = document.getElementById('input');
 inputId.addEventListener('keyup', function onEvent(e) {
     if (e.keyCode === 13) {
+      var container = document.querySelector(".js-search-results");
+      container.innerHTML = " ";
     var input = document.querySelector("input").value;
         SoundCloudAPI.getTrack(input);
     }
