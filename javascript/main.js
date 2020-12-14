@@ -100,7 +100,7 @@ SoundCloudAPI.getEmbed =function(trackURL){
   auto_play: true
 }).then(function(embed){
   console.log('oEmbed response: ', embed);
-    var sideBar = document.querySelector(".js-playlist");
+    var SideBar = document.querySelector(".js-playlist");
     var box= document.createElement('div');
     box.innerHTML = embed.html;
     SideBar.insertBefore(box, SideBar.firstChild);
@@ -109,5 +109,6 @@ SoundCloudAPI.getEmbed =function(trackURL){
 
    
 }
- var sideBar =document.querySelector( '.js-playlist' );
+
+var sideBar =document.querySelector( '.js-playlist' );
 sideBar.innerHTML=localStorage.getItem("key");
