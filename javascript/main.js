@@ -1,7 +1,8 @@
+
 /* 1.Search */
  function sil(){
     var removeAll= document.getElementById('button-2');
-    removeAll.addEventListener('click',function(){
+removeAll.addEventListener('click',function(){
     localStorage.clear();
     location.reload();
 //    $( ".js-playlist" ).load(window.location.href + " .js-playlist" );
@@ -75,15 +76,6 @@ card.classList.add("card");
 var imageDiv =document.createElement("div");
 imageDiv.classList.add("image");
 
-var image_img = document.createElement("img");
-image_img.classList.add("image_img");
-image_img.src = track.artwork_url ||'http://lorempixel.com/100/100/abstract/' ;
-
-imageDiv.appendChild(image_img);
-
-//content 
-var content= document.createElement('div');
-    content.classList.add("content");
 
 var header = document.createElement('div');
 header.classList.add('header');
@@ -107,7 +99,7 @@ card.appendChild(imageDiv);
 card.appendChild(content);
 card.appendChild(button);
 
-var searchResult = document.querySelector(".js-search-results");
+var searchResult = document.querySelector(" .js-search-results" );
 
 searchResult.appendChild(card);
 }) }
