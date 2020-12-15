@@ -46,6 +46,11 @@ html, body {
 	margin: 30px;
 }
 
+.button {
+ display: block;
+}
+
+
 #soundcloud-player .input {
 	width: 100%;
 }
