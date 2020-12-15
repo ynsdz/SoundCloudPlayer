@@ -1,4 +1,21 @@
 /* 1.Search */
+ function sil(){
+    var removeAll= document.getElementById('button-2');
+removeAll.addEventListener('click',function(){
+    localStorage.clear();
+    location.reload();
+//    $( ".js-playlist" ).load(window.location.href + " .js-playlist" );
+
+});
+
+var removeLast= document.getElementById('button-1');
+removeLast.addEventListener('click', function(){
+var playlist = document.querySelector(".js-playlist");
+localStorage.removeItem("key");
+playlist.removeChild(playlist.firstChild);
+});
+}
+
 var UI={}
 
 UI.submit=function(){
@@ -112,3 +129,4 @@ SoundCloudAPI.getEmbed =function(trackURL){
 
 var sideBar =document.querySelector( '.js-playlist' );
 sideBar.innerHTML=localStorage.getItem("key");
+sil();
