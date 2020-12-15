@@ -1,7 +1,7 @@
 /* 1.Search */
  function sil(){
     var removeAll= document.getElementById('button-2');
-removeAll.addEventListener('click',function(){
+    removeAll.addEventListener('click',function(){
     localStorage.clear();
     location.reload();
 //    $( ".js-playlist" ).load(window.location.href + " .js-playlist" );
@@ -107,7 +107,7 @@ card.appendChild(imageDiv);
 card.appendChild(content);
 card.appendChild(button);
 
-var searchResult = document.querySelector(" .js-search-results" );
+var searchResult = document.querySelector(".js-search-results");
 
 searchResult.appendChild(card);
 }) }
